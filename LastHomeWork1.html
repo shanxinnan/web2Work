@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		#bo{
+			display: none;
+			background-color: #f8f7f6;
+		}
+		#top0{
+			height: 50px;
+		}
+		#top{
+			float: left;
+			margin-top: 6px;
+			margin-left: 60px;
+			color: #8c8c8c;
+		}
+		#top1{
+			height: 60px;
+			float: right;
+			margin-top: 5px;
+			margin-right:20px; 
+			color:#8c8c8c;
+			font-size: 13px;
+		}
+		#top1 span{
+			margin-right: 6px;
+			margin-left: 6px;
+		}
+		#top1 img{
+			margin-left: 10px;
+			margin-right: 5px;
+		}
+		#top20{
+			height: 95px;
+		}
+		#top2 img{
+			float: left;
+			margin-top: -10px;
+			margin-left: 50px;
+		}
+		#top2a input{
+			float: left;
+			width:490px;
+			height: 38px;
+			border: 3px solid #ee7600;
+			margin-left: 60px;
+		}
+		#top2a button{
+			float: left;
+			background-color: #ee7600;
+			width: 90px;
+			height: 44px;
+			color:#ffffff;
+			font-size: 18px;
+			border: 2px solid #ee7600;
+		}
+		#top3{
+			float: right;
+			width: 400px;
+			height: 30px;
+		}
+		#top3a{
+			float: left;
+			width: 110px;
+			border: 2px solid #e6e5e2;
+			border-radius: 2px;
+		}
+		#top3a img{
+			width:19px;
+			height:16px;
+			margin-left: 40px;
+		}
+		#top3a span{
+			float: left;
+		}
+		#top3b{
+			float: left;
+			width: 110px;
+			height: 41.5px;
+			border: 2px solid #e6e5e2;
+			border-radius: 2px;
+			background-color: #ff4d04;
+			color: #ffffff;
+		}
+		#top3b img{
+			margin-top: 14px;
+			margin-left:7px;
+		}
+		#top4{
+			float: left;
+			height: 10px;
+			width: 600px;
+			margin-left: 255px;
+			margin-top: 10px;
+			font-size: 14px;
+		}
+		#top4 img{
+			height: 18px;
+			width: 2px;
+			position: absolute;
+		}
+		#top4 span{
+			margin-left: 3px;
+			margin-right: 3px;
+			text-align:center; 
+		}
+		#top4a{
+			color: red;
+		}
+		#top4b{
+			color:#cbb1d3;
+		}
+		#bottom4{
+			height: 200px;
+			padding-top: 50px;
+			text-align: center;
+		}
+		#bottom4 img{
+			float: left;
+			margin-left: 50px;
+		}
+		#bottom4a ul{
+			float: left;
+			margin-left: 50px;
+		}
+		#bottom4a ul li{
+			margin-top: 5px;
+			font-size: 14px;
+			color: #666560;
+		}
+		#bottom3{
+			height: 20px;
+			text-align: center;
+		}
+		#bottom3 span{
+			color:#666550;
+			font-size: 14px;
+			margin-top: 4px;
+			margin-left: 2px;
+			margin-right: 5px;
+		}
+		#bottom3 hr{
+			margin-left: 80px;
+			color: #a66000;
+		}
+		#bottom3 img{
+			height: 18px;
+			width: 2px;
+			position: absolute;
+		}
+		#bottom3a{
+			text-align: center;
+		}
+		#bottom2{
+			height: 100px;
+			padding-top: 10px;
+		}
+		#bottom2 p{
+			text-align:center;
+			color: #9a9791;
+			margin: 0 auto;
+			font-size: 14px;
+			padding-top: 9px;
+
+		}
+		#bottom1{
+			text-align:center; 
+		}
+	 	#zhong1{
+	 		height: 40px;
+	 		text-align:center; 
+	 		background-color: #000;
+	 		color: #fff;
+	 		padding-left: 80px;
+	 	}
+	 	#zhong1 span{
+	 		height: 28px;
+	 		font-size: 15px;
+	 		width: 70px;
+	 		text-align:center;
+	 		padding-right: 17px;
+	 		padding-left: 17px;
+	 		float: left;
+	 		padding-top: 10px;
+	 	}
+	 	#zhong2{
+	 		padding-left: 80px;
+	 		padding-top: 10px;
+	 		height: 20px;
+	 		font-size: 14px;
+	 		background-color: #f8f7f6;
+	 	}
+	 	#zhong{
+	 		height: 680px;
+	 		background-color: #f8f7f6;
+	 	}
+	 	#zhong0{
+	 		float: left;
+	 		height: 650px;
+	 		padding-left: 15px;
+	 		padding-top: 10px;
+	 	}
+	 	#zhong3{
+	 		float: left;
+	 		height: 670px;
+	 		width: 900px;
+	 		margin-top: 10px;
+	 		margin-left: 80px;
+	 		background-color: #fff;
+	 	}
+	 	#zhong3a{
+	 		float: left;
+	 		margin: 20px;
+	 		height: 400px;
+	 		width: 350px;
+	 		border: 1px solid #e3eedd;
+	 		position:relative;
+	 		margin:0 auto;
+	 	}
+	 	#zhong3a img{
+	 		height: 400px;
+	 		width: 350px;
+	 	}
+		#img1{
+			width:350px;
+			height:400px;
+			position:absolute;
+			left:0;
+			top:0;
+		}
+		#slider{
+			width:150px;
+			height:150px;
+			position:absolute;
+			left:0;
+			top:0;
+			background:#CCC;
+			opacity:0.4;
+			cursor: move;
+			display:none;
+			filter:alpha(opacity=40);
+		}
+		#img2{
+			left: 440px;
+			position:absolute;
+			top:240px;
+			display:none;
+			width:390px;
+			height:390px;
+			overflow:hidden;
+		}
+		#Bimg{
+			position:absolute;
+			top:0;
+			width: 840px;
+			height: 700px;
+		}
+	 	#zhong30{
+	 		height: 400px;
+	 		width: 450px;
+	 		margin-top: 20px;
+	 		margin-left: 10px;
+	 		float: left;
+	 	}
+	 	#zhong3b p{
+	 		font-size: 13px;
+	 		padding-top: 3px;
+	 	}
+	 	#zhong3c p{
+	 		padding-top: 20px;
+	 		font-size: 11px;
+	 	}
+	 	#zhong3c p>span{
+	 		padding-left: 15px;
+	 	}
+	 	#zhong3d{
+	 		float: left;
+	 		height: 70px;
+	 		width: 460px;
+	 	}
+	 	#zhong3d img{
+	 		width: 460px;
+	 	}
+	 	#zhong3e{
+	 		float: left;
+	 		padding: 15px;
+	 		height: 20px;
+	 		font-size: 13px;
+	 	}
+	 	#zhong3e span{
+	 		margin-right: 15px;
+	 	}
+	 	#zhong3e button{
+	 		margin-left: 5px;
+	 		width:60px;
+	 		height: 40px;
+	 		text-align: center;
+	 		border: 0px;
+	 		background-color: #fff;
+	 	}
+	 	#zhong3f{
+	 		height: 30px;
+	 		width: 400px;
+	 		float: left;
+	 		font-size: 13px;
+	 		padding-top: 15px;
+	 	}
+	 	#zhong3f button{
+	 		margin-left: 90px;
+	 		width:20px;
+	 		height: 20px;
+	 	}
+	 	#zhong3f input{
+	 		width: 60px;
+	 		height: 20px;
+	 		text-align: center;
+	 	}
+	 	#zhong3g{
+	 		height: 30px;
+	 		width: 300px;
+	 		float: left;
+	 		padding-top: 7px;
+	 		font-size: 13px;
+	 	}
+	 	#zhong3h{
+	 		height: 40px;
+	 		width: 400px;
+	 		float: left;
+	 		padding-left: 30px;
+	 		padding-top: 20px;
+	 	}
+	 	#zhong3h button{
+	 		width: 140px;
+	 		height: 30px;
+	 		border: 1px solid #f81a5f;
+	 		border-radius: 3px;
+	 	}
+	 	#zhong4a{
+	 		float: left;
+	 		height: 50px;
+	 		width: 500px;
+	 	}
+	 	#zhong4a img{
+	 		float: left;
+	 		width: 80px;
+	 		height:80px; 
+	 	}
+	 	#zhong5{
+	 		height: 100px;
+	 		background-image:url(img/a_07.jpg);
+	 	}
+	 	.sum{
+	 		width: 50px;
+	 		height: 30px;
+	 		text-align:center;
+	 	}
+	 	.bg{
+	 		background-image: url(img/duigou.png);
+	 		background-position:right bottom;
+			background-repeat :no-repeat;
+	 	}
+	 	.bg1{
+	 		background-color: #fff;
+	 	}
+	 	#tan{
+	 		display: none;
+	 		width: 100%;
+	 		height: 1300px;
+	 		opacity: 0.9;
+	 		float: left;
+	 		position: absolute;
+	 		z-index: 1;
+	 		top:0;
+	 		left: 0;
+	 		background-color: #f8f7f6;
+
+	 	}
+	 	#why{
+	 		margin-top: 500px;
+	 		margin-left: 400px;
+	 		width: 350px;
+	 		height: 200px;
+	 		border: 2px solid #86858f;
+	 		background-color: #fff;
+	 	}
+	 	#jie{
+	 		font-size: 14px;
+	 	}
+	 	#why img{
+	 		width: 350px;
+	 		text-align: center;
+	 		height: 90px;
+	 		margin-top: 30px;
+	 	}
+	 	#jie button{
+	 		float: left;
+	 		border: 1px solid #f81a5f;
+	 		height: 30px;
+	 		width: 140px;
+	 		margin-left: 20px;
+	 		border-radius: 4px;
+	 	}
+	</style>
+</head>
+<body>
+	<div id="tan">
+		<div id="why">
+			<img src="img/rr.jpg">
+			<div id="jie">
+				<button style="color:#f81a5f;color:#f81a5f;background-color: #fff;" id="m">继续购物</button>
+				<button style="background-color:#f81a5f;color: #fff;float: left;" id="n">去购物车结算</button>
+			</div>
+		</div>
+	</div>
+	<div id="top0">
+		<span id="top">帮五买，享帮帮</span>
+		<div id="top1">
+		    <img src="img/qq.jpg" width="20px" height="20px">
+		    <img src="img/weixin.jpg" width="20px" height="20px">
+		    <img src="img/weibo.jpg" width="20px" height="20px">
+		    <span>登录</span>
+		    <span>注册</span>
+		    <span><img src="img/letter.png" width="20px" height="14px"> 消息</span>
+		    <span><img src="img/dingdan.jpg"> 我的订单</span>
+		    <span>我的收藏</span>
+		    <span>帮钻兑换</span>
+		    <span><img src="img/my-phone.png">手机版</span>
+		    <span>帮5淘</span>
+		    <span>客户服务</span>
+		    <span><img src="img/gouwuche.jpg">购物车 0</span>
+		</div>
+	</div>
+	<div id="top20">
+	<div id="top2">
+		<img src="img/logo3.jpg">
+		<div id="top2a">
+			<input id="in" placeholder="输入商品网址或关键词，直通全网，快速帮5沟！">
+	    	<button>搜全网</button>
+		</div>
+	</div>
+	<div id="top3">
+		<div id="top3a">
+			<img src="img/dianhua.png">
+			<span>400-085-0505</span>
+		</div>
+		<div id="top3a">
+			<img src="img/letter.png">
+			<span>mc@b5m.com</span>
+		</div>
+		<div id="top3b">
+			<img src="img/wenhao.jpg">
+			<span>常见问题</span>
+		</div>
+	</div>
+	<div id="top4">
+		<span id="top4a">洗发护发</span><img src="img/shuxian.jpg">
+		<span id="top4a">日本纸尿裤</span><img src="img/shuxian.jpg">
+		<span>身体乳</span><img src="img/shuxian.jpg">
+		<span>内衣文胸</span><img src="img/shuxian.jpg">
+		<span id="top4b">iPhone 6s</span><img src="img/shuxian.jpg">
+		<span id="top4b">iPad Air2</span><img src="img/shuxian.jpg">
+		<span>牛仔裤</span><img src="img/shuxian.jpg">
+		<span>奶粉</span><img src="img/shuxian.jpg">
+		<span>防晒霜</span><img src="img/shuxian.jpg">
+		<span>伞</span>
+	</div>
+    </div>
+    <div id="zhong1">
+		<span style="background-color: #fe015f;">首页</span><span>热门品牌</span><span>美妆个户</span><span>服饰鞋包</span><span>母婴生活</span><span>食品保健</span><span>韩国直邮</span><span>跨境购</span>
+		<img src="img/ff_03.jpg">
+	</div>
+	<div id="zhong2">
+		<p>首页>美容护肤/美体/精油>防晒>韩国 RE:CIPE 水晶清爽防水防晒喷雾SPE50 150ml/瓶</p>
+	</div>
+	<div id="zhong">
+		<div id="zhong3">
+			<div id="zhong3a">
+				<div id="img1">
+				<img src="img/pp0.jpeg" id="3a">
+				 <div id="slider"></div>
+				</div>
+			</div>
+			<div id="img2">
+					<img src="img/pp0.jpeg" id="Bimg">
+			</div>
+			<div id="zhong30">
+				<div id="zhong3b">
+					<p style="font-size: 14px">韩国RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</p>
+					<p style="color: #9a9791; line-height:25px;">【限购3件】超透明无痕防晒，防水防汗定妆，保湿降温不黏腻。水晶防晒喷雾，喷后皮肤水润，不油，不留白，更不会像防晒霜那样抹不开，非常实用，开始存货吧。</p>
+				</div>
+				<div id="zhong3c">
+					<p><span>价格</span><span style="color: red;">￥71</span><span style="text-decoration: line-through;">￥150</span></p>
+				</div>
+			<div id="zhong3d">
+				<img src="img/ss_09.jpg">
+			</div>
+			<div id="zhong3e">
+				<span>化妆品净含量</span><button id="ml1">150ml</button><button id="ml2">200ml</button>
+			</div>
+			<div id="zhong3f">
+				<span style="padding-left: 15px;">数量</span><span><button id="pt1">-</button><input id="sum"><button id="pt2" style="margin-left: 0px;">+</button></span><span>件（库存量5件）</span>
+			</div>
+			<div id="zhong3g">
+				<span style="padding-left: 15px;">销量</span><span style="padding-left: 90px;color:#f81a5f;">81</span><span>件</span>
+			</div>
+			<div id="zhong3g">
+				<span style="padding-left: 130px;">您已选择</span><span id="spans" style="padding-left: 20px;color: orange;">"150ml"</span>
+			</div>
+			<div id="zhong3h">
+				<button style="background-color:#fff;color:#f81a5f;">立即购买</button>
+				<button style="background-color:#f81a5f;color:#fff;margin-left: 30px;" id="go">加入购物车</button>
+			</div>
+			</div>
+			<div id="zhong4a">
+				<button><img src="img/spanl.jpg" style="width: 15px;margin-left: 2px;"></button>
+				<button id="but1"><img src="img/pp0.jpeg"></button>
+				<button id="but2"><img src="img/pp1.jpeg"></button>
+				<button style="margin-left: 130px;"><img src="img/spanr.jpg" style="width: 15px;"></button>
+			</div>
+		</div>
+		<div id="zhong0">
+			<img src="img/ww_07.jpg">
+		</div>
+	</div>
+	<div id="zhong5">
+	</div>
+	<div id="bottom4">
+		<img src="img/login.jpg" width="170px" height="165px">
+		<div id="bottom4a">
+			<ul>
+				<li font-size="16px"><b>购物指南</b></li>
+				<li>如何下单</li>
+				<li>帮5购流程</li>
+				<li>订单查询</li>
+				<li>物流配送</li>
+			</ul>
+			<ul>
+				<li font-size="16px"><b>支付相关</b></li>
+				<li>支付方式</li>
+				<li>安全设置</li>
+				<li>账户信息</li>
+				<li></li>
+		 	</ul>
+			<ul>
+				<li font-size="16px"><b>售后服务</b></li>
+				<li>取消订单</li>
+				<li>申请售后</li>
+				<li>退货流程</li>
+				<li>退款相关</li>
+		    </ul>
+			<ul>
+			 	<li font-size="16px"><b>VIP服务</b></li>
+			 	<li>VIP优惠</li>
+			 	<li>如何成为VIP</li>
+			 	<li>超级帮钻</li>
+			 	<li></li>
+			</ul>
+			<ul>
+			 	<li font-size="16px"><b>帮韩品</b></li>
+			 	<li>韩国正品</li>
+			 	<li>闪电发货</li>
+			 	<li>帮韩品售后</li>
+			 	<li></li>
+			</ul>
+			<ul>
+				<li font-size="16px"><b>更多</b></li>
+				<li>手机APP</li>
+				<li>帮5采</li>
+				<li>帮5淘插件</li>
+				<li>其他</li>
+			</ul>
+		</div>
+		<img src="img/erweima.jpg">
+	</div>
+	<div id="bottom3">
+		<hr width="1000px" height="2px">
+		<div id="bottom3a">
+		<span>关于帮五买</span><img src="img/shuxian.jpg">
+		<span>联系我们</span><img src="img/shuxian.jpg">
+		<span>合作商家</span><img src="img/shuxian.jpg">
+		<span>友情链接</span><img src="img/shuxian.jpg">
+		<span>加入我们</span><img src="img/shuxian.jpg">
+		<span>移动应用</span><img src="img/shuxian.jpg">
+		<span>热门</span><img src="img/shuxian.jpg">
+		<span>广告联盟</span><img src="img/shuxian.jpg">
+		<span>使用条款</span>
+		</div>
+	</div>
+	<div id="bottom2">
+		<p>Copyright © 2011-2015 B5M.COM.ALL rights reserved.Powered by B5Msoft Co.,Ltd.</p>
+		<p>增值电信业务经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书(沪)-非经营性-2013-0034沪卫(中医)网审【2015】10032号沪ICP备110343776号-3|食品流通许可证:</p>
+		<p>SP3101151410301755</p>
+	</div>
+	<div id="bottom1">
+		<img src="img/bo1.gif">
+		<img src="img/bo2.png">
+		<img src="img/bo3.gif">
+		<img src="img/bo4.png">
+		<img src="img/bo5.png">
+		<img src="img/bo6.png">
+		<img src="img/bo7.png">
+	</div>
+	<script type="text/javascript">
+		var ml1=document.getElementById('ml1');
+		var ml2=document.getElementById('ml2');
+		var spans=document.getElementById('spans');
+		ml1.onclick=function(){
+			spans.innerHTML='"150ml"';
+			ml1.className='bg';
+			ml2.className='bg1';
+			ml1.style.border='1px solid #f81a5f';
+			ml2.style.border='0px solid';
+		}
+		ml2.onclick=function(){
+			spans.innerHTML='"200ml"';
+			ml1.className='bg1';
+			ml2.className='bg';
+			ml2.style.border='1px solid #f81a5f';
+			ml1.style.border='0px solid';
+		} 
+		var but1=document.getElementById('but1');
+		var but2=document.getElementById('but2');
+		var a=document.getElementById('3a');
+		var pt1=document.getElementById('pt1');
+		var pt2=document.getElementById('pt2');
+		var sum=document.getElementById('sum');
+		pt1.onmouseover=function () {
+			pt1.style.cursor="pointer";
+		}
+		pt1.onclick=function () {
+			if(sum.value<6&&sum.value>1){
+				pt1.style.cursor="pointer";
+				sum.value--;          
+			}
+			else if(sum.value==1){
+				pt1.style.cursor="not-allowed";
+			}
+		}
+		pt2.onmouseover=function () {
+			pt2.style.cursor="pointer";
+		}
+		pt2.onclick=function () {
+			if(sum.value<5){
+				pt2.style.cursor="pointer";
+				sum.value++;           
+			}
+			else if(sum.value==5){
+				pt2.style.cursor="not-allowed";
+			}
+		}
+
+		var img1 = document.getElementById("img1");
+		var img2 = document.getElementById("img2");
+		var slider = document.getElementById("slider");
+		var Bimg = document.getElementById("Bimg");
+		var box = document.getElementById('zhong3a'); 
+		but1.onclick=function(){
+			Bimg.src="img/pp0.jpeg";
+			a.src="img/pp0.jpeg";
+			but1.style.border="1px solid orange";
+			but2.style.border="0px solid";
+		}
+		but2.onclick=function(){
+			a.src="img/pp1.jpeg";
+			but2.style.border="1px solid orange";
+			but1.style.border="0px solid";
+			Bimg.src="img/pp1.jpeg";
+		}
+		img1.onmouseover=function(){
+		    slider.style.display='block';
+			img2.style.display='block';
+	 	}
+		img1.onmouseout=function(){
+		    slider.style.display='none';
+			img2.style.display='none';
+	 	}
+	  
+	    img1.onmousemove=function(ev){
+			var ev=ev||event;
+			  
+			var oL=ev.clientX-box.offsetLeft-slider.offsetWidth/20;
+			var oT=ev.clientY-box.offsetTop-slider.offsetHeight/20;
+			  
+			var oMaxw=img1.offsetWidth-slider.offsetWidth;
+			var oMaxh=img1.offsetHeight-slider.offsetHeight;
+			  
+			oL=oL>oMaxw?oMaxw:oL<0?0:oL;
+			oT=oT>oMaxh?oMaxh:oT<0?0:oT;
+			
+			slider.style.left = oL-10+'px';
+			slider.style.top = oT+5+'px' ;
+			slider.style.right = oL-10+'px';
+			slider.style.bottom= oT+5+'px' ;
+			
+			var oBmaxw = img2.offsetWidth - Bimg.offsetWidth; 
+			var oBmaxh = img2.offsetHeight - Bimg.offsetHeight; 
+			Bimg.style.left = ( oL/oMaxw ) * oBmaxw + 'px'
+			Bimg.style.top = ( oT/oMaxh ) * oBmaxh + 'px'
+		}
+		var bo=document.getElementById('bo');
+		var go=document.getElementById('go');
+		var tan=document.getElementById('tan');
+		var m=document.getElementById('m');
+		var n=document.getElementById('n');
+		go.onclick=function(){
+			tan.style.display="block";
+			m.onclick=function(){
+			tan.style.display="none";
+
+		}
+		n.onclick=function(){
+			tan.style.display="none";
+
+		}
+
+		}		
+
+
+	</script>
+</body>
+</html>

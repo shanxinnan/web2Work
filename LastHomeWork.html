@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		.top00{
+			position: absolute;
+			z-index:9999;
+		}
+		.top00:hover{
+			margin-top:0px;
+		}
+		#top0{
+			height: 50px;
+			z-index: 33;
+		}
+		#top{
+			float: left;
+			margin-top: 6px;
+			margin-left: 60px;
+			color: #8c8c8c;
+			z-index: 33;
+		}
+		#top1{
+			height: 60px;
+			float: right;
+			margin-top: 5px;
+			margin-right:20px; 
+			color:#8c8c8c;
+			font-size: 13px;
+			z-index: 33;
+		}
+		#top1 span{
+			margin-right: 6px;
+			margin-left: 6px;
+		}
+		#top1 img{
+			margin-left: 10px;
+			margin-right: 5px;
+		}
+		#top20{
+			height: 90px;
+			z-index: 33;
+		}
+		#top2 img{
+			float: left;
+			margin-top: -10px;
+			margin-left: 50px;
+		}
+		#top2a input{
+			float: left;
+			width:490px;
+			height: 38px;
+			border: 3px solid #ee7600;
+			margin-left: 60px;
+		}
+		#top2a button{
+			float: left;
+			background-color: #ee7600;
+			width: 90px;
+			height: 44px;
+			color:#ffffff;
+			font-size: 18px;
+			border: 2px solid #ee7600;
+		}
+		#top3{
+			float: right;
+			width: 400px;
+			height: 30px;
+		}
+		#top3a{
+			float: left;
+			width: 110px;
+			border: 2px solid #e6e5e2;
+			border-radius: 2px;
+		}
+		#top3a img{
+			width:19px;
+			height:16px;
+			margin-left: 40px;
+		}
+		#top3a span{
+			float: left;
+		}
+		#top3b{
+			float: left;
+			width: 110px;
+			height: 41.5px;
+			border: 2px solid #e6e5e2;
+			border-radius: 2px;
+			background-color: #ff4d04;
+			color: #ffffff;
+		}
+		#top3b img{
+			margin-top: 14px;
+			margin-left:7px;
+		}
+		#top4{
+			float: left;
+			height: 10px;
+			width: 600px;
+			margin-left: 255px;
+			margin-top: 10px;
+			font-size: 14px;
+		}
+		#top4 img{
+			height: 18px;
+			width: 2px;
+			position: absolute;
+		}
+		#top4 span{
+			margin-left: 3px;
+			margin-right: 3px;
+			text-align:center; 
+		}
+		#top4a{
+			color: red;
+		}
+		#top4b{
+			color:#cbb1d3;
+		}
+		#bottom4{
+			height: 200px;
+			padding-top: 50px;
+			text-align: center;
+			background-color: #f8f7f6;
+		}
+		#bottom4 img{
+			float: left;
+			margin-left: 50px;
+		}
+		#bottom4a ul{
+			float: left;
+			margin-left: 50px;
+		}
+		#bottom4a ul li{
+			margin-top: 5px;
+			font-size: 14px;
+			color: #666560;
+		}
+		#bottom3{
+			height: 20px;
+			background-color: #f8f7f6;
+			text-align: center;
+		}
+		#bottom3 span{
+			color:#666550;
+			font-size: 14px;
+			margin-top: 4px;
+			margin-left: 2px;
+			margin-right: 5px;
+		}
+		#bottom3 hr{
+			margin-left: 80px;
+			color: #a66000;
+		}
+		#bottom3 img{
+			height: 18px;
+			width: 2px;
+			position: absolute;
+		}
+		#bottom3a{
+			text-align: center;
+		}
+		#bottom2{
+			height: 100px;
+			background-color: #f8f7f6;
+			padding-top: 10px;
+		}
+		#bottom2 p{
+			text-align:center;
+			color: #9a9791;
+			margin: 0 auto;
+			font-size: 14px;
+			padding-top: 9px;
+
+		}
+		#bottom1{
+			text-align:center; 
+			background-color: #f8f7f8;
+		}
+		#zhong1{
+	 		height: 40px;
+	 		text-align:center; 
+	 		padding-left: 80px;
+	 	}
+	 	#zhong1 span{
+	 		height: 28px;
+	 		font-size: 15px;
+	 		width: 117px;
+	 		text-align:center;
+	 		padding-right: 13px;
+	 		padding-left: 13px;
+	 		float: left;
+	 		padding-top: 10px;
+	 	}
+	 	#zhong1 img{
+	 		float: left;
+	 	}
+	 	#h{
+	 		border: 1px solid red;
+	 	}
+	 	#zhong2{
+	 		background-color: #f8f7f6;
+	 		height: 492px;
+	 		z-index: -2;
+	 	}
+	 	#zhong2a{
+	 		margin-left: 78px;
+	 		height: 492px;
+	 		width: 1145px;
+	 		background-color: #fff;
+	 		z-index: -2;
+	 	}
+	 	#zhong2a0{
+	 		float: left;
+	 		height: 492px;
+	 		width: 158px;
+	 	}
+	 	#zhong2aa{
+	 		float: left;
+	 		width: 18px;
+	 		height: 350px;
+	 		background-color: #000;
+	 		color: red;
+	 		padding-left: 6px;
+	 		padding-top: 40px;
+	 		font-size: 14px;
+	 		line-height: 27px;
+	 	}
+	 	#zhong2ab{
+	 		float: left;
+	 		width: 120px;
+	 		height: 360px;
+	 		font-size: 12px;
+	 		padding-top: 10px;
+	 		padding-left: 7px;
+	 	}
+	 	#zhong2ab ul{
+	 		float: left;
+	 		line-height: 30px;
+	 		height: 360px;
+	 	}
+	 	#zhong2ab ul>li{
+	 		width: 30px;
+	 	}
+	 	.box{
+	 		float: left;
+			width: 770px;
+			height: 322px;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			z-index:1;
+		}
+		.box img{
+			width: 770px;
+			height: 322px;
+		}
+		.slider{
+			width: 8400px;
+			position: absolute;
+			left: -1200px;
+		}
+		.slide{
+			width: 1200px;
+			overflow: hidden;
+			float: left;
+		}
+		.box>span{
+			display: block;
+			width: 24px;
+			height: 40px;
+			text-align: center;
+			cursor: pointer;
+			color: #fff;
+			top: 130px;
+			line-height: 50px;
+			font-size: 30px;
+			position: absolute;
+			vertical-align: middle;
+			opacity:0.9;
+			z-index: 1;
+		}
+		#left{
+			left: 30px;
+		}
+		#right{
+			right: 30px;
+		}
+		.nav{
+			position: absolute;
+			left: 270px;
+			bottom: 20px;
+		}
+		.nav>li{
+			float: left;
+			width: 16px;
+			height: 18px;
+			background: #ccc;
+			cursor: pointer;
+			margin: 0 10px;
+			border-radius: 50%;
+			padding-left: 6px;
+			padding-bottom: 2px;
+			font-size: 14px;
+		}
+		.nav .active{
+			background: red;
+		}
+		#zhong2ac{
+			height: 317px;
+			padding-top: 5px;
+			float: left;
+			font-size: 14px;
+			color: #ff4d04;
+			line-height: 26px;
+			padding-left: 20px;
+		}
+		#zhong2ad{
+			float: left;
+			width: 150px;
+			height:130px;
+			font-size: 13px;
+		}
+		#zhong2ad ul{
+			float: left;
+			padding-top: 10px;
+		}
+		#zhong2ad ul>li{
+			line-height: 30px;
+			
+		}
+		#zhong2ad ul>li>img{
+			float: left;
+			padding: 3px;
+			padding-top: 5px;
+		}
+		#zhong2ae img{
+			float: left;
+			width: 192.5px;
+			height: 170px;
+		}
+		#zhong2af{
+			float: right;
+			height: 140px;
+			width: 170px;
+			padding-top: 7px;
+			padding-right: 30px;
+		}
+		#zhong2af p{
+			padding-top: 10px;
+		}
+		#zhong2af p>button{
+			width: 170px;
+			height: 27px;
+			background-color: orange;
+			border: 1px solid orange;
+			border-radius: 3px;
+			color: #fff;
+		}
+		.r_img1{
+			width: 130px;
+			height: 40px;
+			padding-top: 60px;
+			background: url(img/consult.png) no-repeat;
+			top: 85px;
+			right: -95px;
+			position: fixed;
+			z-index: 100;
+		}
+		.r_img2{
+			width: 60px;
+			height: 110px;
+			background: url(img/youhui.png) no-repeat;
+			top: 195px;
+			right: -27px;
+			position: fixed;
+			z-index: 100;
+		}
+		#r_img3{
+			width: 123px;
+			height: 100px;
+			padding-top: 50px;
+			background: url(img/app.png) no-repeat;
+			top: 307px;
+			right: -90px;
+			position: fixed;
+			background-color: #fd9a6e;
+			z-index: 100;
+		}
+		.r_img4{
+			width: 123px;
+			height: 130px;
+			background: url(img/cart.png) no-repeat;
+			top: 460px;
+			right: -90px;
+			position: fixed;
+			z-index: 100;
+		}
+		.r_img1:hover{
+			right: 0;
+		}
+		.r_img2:hover{
+			right: 0;
+		}
+		#r_img3:hover{
+			right: 0;
+		}
+		.r_img4:hover{
+		right: 0;
+		}
+	</style>
+</head>
+<body>
+<div id="top00" style="background-color: #fff;">
+	<div id="top0">
+		<span id="top">帮五买，享帮帮</span>
+		<div id="top1">
+		    <img src="img/qq.jpg" width="20px" height="20px">
+		    <img src="img/weixin.jpg" width="20px" height="20px">
+		    <img src="img/weibo.jpg" width="20px" height="20px">
+		    <span>登录</span>
+		    <span>注册</span>
+		    <span><img src="img/letter.png" width="20px" height="14px"> 消息</span>
+		    <span><img src="img/dingdan.jpg"> 我的订单</span>
+		    <span>我的收藏</span>
+		    <span>帮钻兑换</span>
+		    <span><img src="img/my-phone.png">手机版</span>
+		    <span>帮5淘</span>
+		    <span>客户服务</span>
+		    <span><img src="img/gouwuche.jpg">购物车 0</span>
+		</div>
+	</div>
+	<div id="top20">
+	<div id="top2">
+		<img src="img/logo3.jpg">
+		<div id="top2a">
+			<input id="in" placeholder="输入商品网址或关键词，直通全网，快速帮5沟！">
+	    	<button>搜全网</button>
+		</div>
+	</div>
+	<div id="top3">
+		<div id="top3a">
+			<img src="img/dianhua.png">
+			<span>400-085-0505</span>
+		</div>
+		<div id="top3a">
+			<img src="img/letter.png">
+			<span>mc@b5m.com</span>
+		</div>
+		<div id="top3b">
+			<img src="img/wenhao.jpg">
+			<span>常见问题</span>
+		</div>
+	</div>
+	<div id="top4">
+		<span id="top4a">洗发护发</span><img src="img/shuxian.jpg">
+		<span id="top4a">日本纸尿裤</span><img src="img/shuxian.jpg">
+		<span>身体乳</span><img src="img/shuxian.jpg">
+		<span>内衣文胸</span><img src="img/shuxian.jpg">
+		<span id="top4b">iPhone 6s</span><img src="img/shuxian.jpg">
+		<span id="top4b">iPad Air2</span><img src="img/shuxian.jpg">
+		<span>牛仔裤</span><img src="img/shuxian.jpg">
+		<span>奶粉</span><img src="img/shuxian.jpg">
+		<span>防晒霜</span><img src="img/shuxian.jpg">
+		<span>伞</span>
+	</div>
+    </div>
+</div>
+    <div id="zhong1">
+    	<span style="background-color: red;">全部商品分类</span><span>帮5赚</span><span>帮韩品</span><span>超划算</span><span>品牌货栈</span><span>韩国馆</span><span>帮社区</span><span style="padding-right: 0px; width: 58px;">1元兑奖</span>
+		<img src="img/hot.gif">
+    </div>
+    <hr id="h">
+    <div id="zhong2">
+    	<div id="zhong2a">
+    		<div id="zhong2a0">
+    		<div id="zhong2aa">
+    			<span>当前搜索电商</span>
+    			<span>全网</span>
+    		</div>
+    		<div id="zhong2ab">
+    			<ul>
+    				<li>手机</li>
+    				<li>电脑</li>
+    				<li>家电</li>
+    				<li>园艺</li>
+    				<li>彩妆</li>
+    				<li>男装</li>
+    				<li>女包</li>
+    				<li>运动</li>
+    				<li>儿童</li>
+    				<li>乐器</li>
+    				<li>保健</li>
+    				<li>果蔬</li>
+    				<li>文艺</li>
+    			</ul>
+    			<ul>
+    				<li>数码</li>
+    				<li>网络</li>
+    				<li>厨卫</li>
+    				<li>家具</li>
+    				<li>面部</li>
+    				<li>女装</li>
+    				<li>男包</li>
+    				<li>户外</li>
+    				<li>婴儿</li>
+    				<li>家宠</li>
+    				<li>理疗</li>
+    				<li>礼品</li>
+    				<li>生活</li>
+    			</ul>
+    			<ul>
+    				<li>影音</li>
+    				<li>办公</li>
+    				<li>生活</li>
+    				<li>家纺</li>
+    				<li>身体</li>
+    				<li>内衣</li>
+    				<li>女鞋</li>
+    				<li>装备</li>
+    				<li>食品</li>
+    				<li>收藏</li>
+    				<li>药品</li>
+    				<li>粮油</li>
+    				<li>科技</li>
+    			</ul>
+    			<ul>
+    				<li>配件</li>
+    				<li>打印</li>
+    				<li>个户</li>
+    				<li>家饰</li>
+    				<li>香水</li>
+    				<li>其他</li>
+    				<li>男鞋</li>
+    				<li>服饰</li>
+    				<li>玩具</li>
+    				<li>鲜花</li>
+    				<li>眼镜</li>
+    				<li>特产</li>
+    				<li>教育</li>
+    			</ul>
+    		</div>
+    		<div id="zhong2ad">
+				<ul>
+					<li><img src="img/dd_03.jpg"> 什么是帮5购</li>
+					<li><img src="img/dd_06.jpg"> 帮5购提供什么服务</li>
+					<li><img src="img/dd_08.jpg"> 如何开通帮5购服务</li>
+				</ul>
+			</div>
+    	</div>
+    		<div class="box" id="box">
+				<div class="slider" id="slider">
+					<div class="slide"><img src="img/bann1.jpeg" alt=""></div>
+					<div class="slide"><img src="img/bann2.jpeg" alt=""></div>
+					<div class="slide"><img src="img/bann3.jpeg" alt=""></div>
+					<div class="slide"><img src="img/bann4.jpeg" alt=""></div>
+					<div class="slide"><img src="img/bann5.jpeg" alt=""></div>
+					<div class="slide"><img src="img/bann6.png" alt=""></div>
+					<div class="slide"><img src="img/bann1.jpeg" alt=""></div>
+				</div>
+				<span id="left"><</span>
+				<span id="right">></span>
+				<ul class="nav" id="nav">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+			</div>
+			<div id="zhong2ac">
+				<ul>
+    				<li style="color: orange;"><img src="img/notice.png"> <b>帮帮快讯</b><span style="padding-left:70px;">>></span></li>
+    				<hr style="border: 1px solid #e6e5e2;">
+    				<li>[公告]  帮购及VIP服务调整1</li>
+    				<li>[公告]  帮购及VIP服务调整2</li>
+    				<li>[公告]  帮购及VIP服务调整3</li>
+    				<li>[公告]  帮购及VIP服务调整4</li>
+    				<li>[公告]  帮购及VIP服务调整5</li>
+    				<li>[公告]  帮购及VIP服务调整6</li>
+    				<li>[公告]  帮购及VIP服务调整7</li>
+    				<li>[公告]  帮购及VIP服务调整8</li>
+    				<li>[公告]  帮购及VIP服务调整9</li>
+    				<li>[公告]  帮购及VIP服务调整10</li>
+    				<li>[公告]  帮购及VIP服务调整11</li>
+    				<hr style="border: 1px solid #e6e5e2;">
+    			</ul>
+			</div>
+			<div id="zhong2ae">
+				<img src="img/1.jpg">
+				<img src="img/2.jpg">
+				<img src="img/3.png">
+				<a href="LastHomeWork1.html"><img src="img/qqq.png"></a>
+			</div>
+			<div id="zhong2af">
+				<p><img src="img/my-phone.png"><span style="font-size: 13px;padding-left: 9px;">话费充值 </span><span style="color: orange;font-size: 12px;">(可使用超级帮钻)</span></p>
+				<p><input type="" placeholder="请输入手机号"></p>
+				<p><select id="selects">
+					<option>10</option>
+					<option>20</option>
+					<option>30</option>
+					<option>100</option>
+				</select>
+				<span style="color: orange;font-size: 13px;padding-left: 7px;" id="spans">¥10</span></p>
+				<p><button>充值</button></p>
+			</div>
+    	</div>
+    </div>
+	<div id="bottom4">
+		<img src="img/login.jpg" width="170px" height="165px">
+		<div id="bottom4a">
+			<ul>
+				<li font-size="16px"><b>购物指南</b></li>
+				<li>如何下单</li>
+				<li>帮5购流程</li>
+				<li>订单查询</li>
+				<li>物流配送</li>
+			</ul>
+			<ul>
+				<li font-size="16px"><b>支付相关</b></li>
+				<li>支付方式</li>
+				<li>安全设置</li>
+				<li>账户信息</li>
+				<li></li>
+		 	</ul>
+			<ul>
+				<li font-size="16px"><b>售后服务</b></li>
+				<li>取消订单</li>
+				<li>申请售后</li>
+				<li>退货流程</li>
+				<li>退款相关</li>
+		    </ul>
+			<ul>
+			 	<li font-size="16px"><b>VIP服务</b></li>
+			 	<li>VIP优惠</li>
+			 	<li>如何成为VIP</li>
+			 	<li>超级帮钻</li>
+			 	<li></li>
+			</ul>
+			<ul>
+			 	<li font-size="16px"><b>帮韩品</b></li>
+			 	<li>韩国正品</li>
+			 	<li>闪电发货</li>
+			 	<li>帮韩品售后</li>
+			 	<li></li>
+			</ul>
+			<ul>
+				<li font-size="16px"><b>更多</b></li>
+				<li>手机APP</li>
+				<li>帮5采</li>
+				<li>帮5淘插件</li>
+				<li>其他</li>
+			</ul>
+		</div>
+		<img src="img/erweima.jpg">
+	</div>
+	<div id="bottom3">
+		<hr width="1000px" height="2px">
+		<div id="bottom3a">
+		<span>关于帮五买</span><img src="img/shuxian.jpg">
+		<span>联系我们</span><img src="img/shuxian.jpg">
+		<span>合作商家</span><img src="img/shuxian.jpg">
+		<span>友情链接</span><img src="img/shuxian.jpg">
+		<span>加入我们</span><img src="img/shuxian.jpg">
+		<span>移动应用</span><img src="img/shuxian.jpg">
+		<span>热门</span><img src="img/shuxian.jpg">
+		<span>广告联盟</span><img src="img/shuxian.jpg">
+		<span>使用条款</span>
+		</div>
+	</div>
+	<div id="bottom2">
+		<p>Copyright © 2011-2015 B5M.COM.ALL rights reserved.Powered by B5Msoft Co.,Ltd.</p>
+		<p>增值电信业务经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书(沪)-非经营性-2013-0034沪卫(中医)网审【2015】10032号沪ICP备110343776号-3|食品流通许可证:</p>
+		<p>SP3101151410301755</p>
+	</div>
+	<div id="bottom1">
+		<img src="img/bo1.gif">
+		<img src="img/bo2.png">
+		<img src="img/bo3.gif">
+		<img src="img/bo4.png">
+		<img src="img/bo5.png">
+		<img src="img/bo6.png">
+		<img src="img/bo7.png">
+	</div>
+	<div class="r_img1">
+		<img style="width: 129px;margin-left: 1px;" src="img/xiaobang.png" alt="">
+	</div>
+	<div class="r_img2"></div>
+	<div id="r_img3">
+		<img style="padding-bottom: 20px;padding-left: 10px;" src="img/serwei.png" alt="" id="see">
+	</div>
+	<div class="r_img4"></div>
+	<script type="text/javascript">
+		var box = document.getElementById('box');
+		var oNavlist = document.getElementById('nav').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		box.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-1200*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==6){
+					slider.style.left = '-1200px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==0){
+					slider.style.left = '-6000px';
+					index = 5;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >5 ){
+				oNavlist[0].className = "active";
+			}else if(index<=0){
+				oNavlist[4].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 3000);
+		function getStyle(obj, attr){
+			if(obj.currentStyle){
+				return obj.currentStyle[attr];
+			} else {
+				return getComputedStyle(obj, null)[attr];
+			}
+		}
+		function animate(obj,json,callback){
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){
+				var isStop = true;
+				for(var attr in json){
+					var now = 0;
+					if(attr == 'opacity'){
+						now = parseInt(getStyle(obj,attr)*100);
+					}else{
+						now = parseInt(getStyle(obj,attr));
+					}
+					var speed = (json[attr] - now) / 8;
+					speed = speed>0?Math.ceil(speed):Math.floor(speed);
+					var cur = now + speed;
+					if(attr == 'opacity'){
+						obj.style[attr] = cur / 100;
+					}else{
+						obj.style[attr] = cur + 'px';
+					}
+					if(json[attr] !== cur){
+						isStop = false;
+					}
+				}
+				if(isStop){
+					clearInterval(obj.timer);
+					callback&&callback();
+				}
+			}, 30)
+	}
+	window.onload=function(){
+		var top=document.getElementById('top00');
+		window.onscroll=function(){
+			var st=document.documentElement.scrollTop||document.body.scrollTop;
+			if(st>160){
+				top.style.position='fixed'
+			}
+			else{
+				top.style.position='static'
+			}
+		}
+		var selects=document.getElementById('selects');
+		var spans=document.getElementById('spans');
+		function getvalue(se,sp){
+			sp.innerHTML="¥"+se.value;
+			console.log(sp);
+		}
+		selects.onclick=function(){
+			getvalue(selects,spans);
+		}
+		var r_img3=document.getElementById('r_img3');
+		r_img3.onmouseover=function(){
+			var see=document.getElementById('see');
+			see.src="img/erwei.png";
+		}
+		r_img3.onmouseout=function(){
+			var see=document.getElementById('see');
+			see.src="img/serwei.png";
+		}
+	}
+	</script>
+</body>
+</html>
